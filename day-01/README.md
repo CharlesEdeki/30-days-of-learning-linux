@@ -25,14 +25,15 @@ Set up a working Linux environment on a virtual machine and establish a public G
 ---
 
 ## Challenges Faced
-- After cloning, the remote `origin` pointed to the source repository, not my own — pushing would have gone to the wrong place
+- After cloning, the remote `origin` pointed to the source repository, not my own, pushing would have gone to the wrong place
 - Solved by running `git remote set-url origin <my-repo-url>` inside the cloned directory, then verifying with `git remote -v` before pushing
+- Also had issues authenticating my github profile, but after reading up I realized I needed to create a classic token and use it as my password for git authentication.
 
 ---
 
 ## Key Takeaways
-- Linux doesn't guess what you want. You tell it exactly what to do, and it does exactly that — there are no shortcuts that aren't coming
-- Setting up your environment and version control on Day 1 is not optional — it's the foundation everything else builds on
+- Linux doesn't guess what you want. You tell it exactly what to do, and it does exactly that.
+- Setting up your environment and version control on Day 1 is not optional, it's the foundation everything else builds on
 - Four commands (`mkdir`, `cd`, `git clone`, `git remote set-url`) were enough to go from nothing to a fully connected, publicly tracked workspace
 - Public accountability from Day 1 changes how seriously you take the work
 
